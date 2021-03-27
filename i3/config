@@ -231,16 +231,18 @@ client.focused_inactive		$ibgcolor		$ibgcolor			$itextcolor		$ibgcolor
 client.urgent			$ubgcolor		$ubgcolor			$textcolor		$ubgcolor
 
 # i3Locks
-bindsym $mod+x exec /home/nishant/.config/scripts/lock
+bindsym $mod+x ~/.config/scripts/lock
 
 #Polybar Launch Script
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/nishant/Pictures/wallpaper.jpg
+exec_always feh --bg-fill "your picture location goes here"
 
 #Tap to Click Script
+#Added this to make my touchpad work
 exec_always --no-startup-id /home/nishant/startup.sh
+
 
 #Launch Apps
 bindsym $mod+c exec chromium
